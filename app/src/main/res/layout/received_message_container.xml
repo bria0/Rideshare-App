@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/male_user_formatter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/receivedMessage"/>
+
+    <TextView
+        android:id="@+id/receivedMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/received_message_background"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@id/profilePhoto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.75"/>
+
+    <TextView
+        android:id="@+id/receivedMessageTimeDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@id/receivedMessage"
+        app:layout_constraintTop_toBottomOf="@id/receivedMessage"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

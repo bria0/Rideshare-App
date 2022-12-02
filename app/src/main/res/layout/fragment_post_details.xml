@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/driver_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driver Information"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/male_user_formatter">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/driver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brianna Nguyen" />
+
+                <TextView
+                    android:id="@+id/driver_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ 4.3"/>
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/messageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp">
+
+            </Button>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Post Information"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Pickup Location:"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:id="@+id/pickup_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Wilfrid Laurier University"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Dropoff Location:"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dropoff_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Square One Bus Terminal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Date:"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:id="@+id/ride_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="22nd November, 2022"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/price_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/ride_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$25"
+                    android:layout_marginLeft="8dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/seats_available_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seats Available:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/seats_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:layout_marginLeft="8dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/car_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car Details"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Model"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/car_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Honda Civic 2021"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="License Plate"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/car_license_plate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WLU CP 470"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Color"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/car_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blue"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/additionalComments"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Comments"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/ride_add_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Comments"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/confirmRideBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Ride"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <Button
+                android:id="@+id/deletePosting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Posting"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

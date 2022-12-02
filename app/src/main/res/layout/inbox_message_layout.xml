@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:background="@drawable/background_rounded_corner"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    >
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/male_user" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:gravity="left|center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/userFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"/>
+
+        <TextView
+            android:id="@+id/lastMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:text="Last Message"/>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/messageMoreBtn"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/more_than"
+        android:layout_gravity="center_vertical"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:background="@drawable/transparent_drawable"/>
+
+</LinearLayout>
