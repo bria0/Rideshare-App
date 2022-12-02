@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/landingPageActivity">
+    <activity
+        android:id="@+id/landingPageActivity"
+        android:name="com.example.ridex.LandingPageActivity"
+        android:label="activity_landing_page"
+        tools:layout="@layout/activity_landing_page" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.ridex.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/signUpActivity"
+        android:name="com.example.ridex.SignUpActivity"
+        android:label="activity_sign_up"
+        tools:layout="@layout/activity_sign_up" />
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.ridex.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <action
+        android:id="@+id/action_global_landingPageActivity"
+        app:destination="@id/landingPageActivity" />
+    <action
+        android:id="@+id/action_global_loginActivity2"
+        app:destination="@id/loginActivity" />
+    <action
+        android:id="@+id/action_global_signUpActivity"
+        app:destination="@id/signUpActivity" />
+    <fragment
+        android:id="@+id/accountPageFragment"
+        android:name="com.example.ridex.AccountPageFragment"
+        android:label="fragment_account_page"
+        tools:layout="@layout/fragment_account_page" >
+        <action
+            android:id="@+id/action_accountPageFragment_to_mainActivity22"
+            app:destination="@id/mainActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.ridex.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
+    </fragment>
+</navigation>

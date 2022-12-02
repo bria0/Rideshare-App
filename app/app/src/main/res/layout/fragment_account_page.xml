@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountPageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bottom_border"
+                >
+
+                <ImageView
+                    android:id="@+id/profile_imageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/male_user" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#6B000000"
+                        android:text="Welcome!" />
+
+                    <TextView
+                        android:id="@+id/userFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        android:text="John Doe" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/logoutBtn"
+                    android:layout_weight="1"
+                    android:layout_width="200dp"
+                    android:scaleType="fitCenter"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/transparent_drawable"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/logout50" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bottom_border"
+                >
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_about_layout"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:hapticFeedbackEnabled="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/numberOfRidesTaken"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="Rider"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_about_layout"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:hapticFeedbackEnabled="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/overAllRating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="⭐️4.5"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center"
+                        android:text="Ratings"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_about_layout"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:hapticFeedbackEnabled="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/numberOfRidesDriven"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="Driver"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bottom_border"
+                >
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/person" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:textSize="17sp"
+                    android:text="My Profile" />
+
+                <ImageButton
+                    android:id="@+id/profileBtn"
+                    android:layout_weight="1"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:paddingEnd="26dp"
+                    android:paddingStart="26dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/transparent_drawable"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/more_than30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bottom_border"
+                >
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/my_listings" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="My Listings"
+                    android:textSize="17sp" />
+
+                <ImageButton
+                    android:id="@+id/myListingsImageBtn"
+                    android:layout_weight="1"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:paddingEnd="26dp"
+                    android:paddingStart="26dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/transparent_drawable"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/more_than30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bottom_border"
+                >
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/id_verification" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="ID Verification"
+                    android:textSize="17sp" />
+
+                <ImageButton
+                    android:id="@+id/idVerificationBtn"
+                    android:layout_weight="1"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:paddingEnd="26dp"
+                    android:paddingStart="26dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/transparent_drawable"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/more_than30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bottom_border"
+                >
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/notification" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:textSize="17sp"
+                    android:text="Notification" />
+
+                <ImageButton
+                    android:id="@+id/notificationBtn"
+                    android:layout_weight="1"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="26dp"
+                    android:paddingStart="26dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/transparent_drawable"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/more_than30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bottom_border"
+                >
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/payments" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:textSize="17sp"
+                    android:text="Payments" />
+
+                <ImageButton
+                    android:id="@+id/paymentsBtn"
+                    android:layout_weight="1"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="26dp"
+                    android:paddingStart="26dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/transparent_drawable"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/more_than30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bottom_border"
+                >
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/help" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:textSize="17sp"
+                    android:text="Help" />
+
+                <ImageButton
+                    android:id="@+id/helpBtn"
+                    android:layout_weight="1"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="26dp"
+                    android:paddingStart="26dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/transparent_drawable"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/more_than30" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

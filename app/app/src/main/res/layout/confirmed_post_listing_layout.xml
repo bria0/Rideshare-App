@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_rounded_corner"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="left|center"
+            android:text="22nd November 2022 · 10:00 PM"/>
+
+        <TextView
+            android:id="@+id/seats_available"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="left|center"
+            android:text="Seats Available: 5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/active_driver_ride"
+            android:layout_gravity="center_vertical"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/transparent_drawable"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/driver_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver: Vaibhav Patel"
+                />
+
+            <TextView
+                android:id="@+id/car_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Honda Civic · WLUS 2980"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Destination: "
+                    android:gravity="left|center"
+                    />
+                <TextView
+                    android:id="@+id/destination_name"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Brampton ON"
+                    android:gravity="left|center"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@drawable/more_than"
+            android:layout_gravity="center_vertical"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/transparent_drawable"/>
+    </LinearLayout>
+
+
+</LinearLayout>

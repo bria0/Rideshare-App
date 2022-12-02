@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">RideX</string>
+    <string name="action_settings">Settings</string>
+    <string name="email_text">Email Address</string>
+    <string name="password_text">Password</string>
+    <string name="firstName_text">First Name</string>
+    <string name="lastName_text">Last Name</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="need_to_signUp_text">Don\'t have an account yet?</string>
+    <string name="need_to_signIn_text">Have an account already?</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="choose">Choose</string>
+    <string name="your_route">your Route</string>
+    <string name="from_text">From</string>
+    <string name="to_text">To</string>
+    <string name="search_text">Search as:</string>
+    <string name="profile_picture_title">Profile Picture</string>
+    <string name="profile_picture_description">Make sure to include your face in order to verify the profile.</string>
+    <string name="upload_existing_image">Upload existing image:</string>
+    <string name="profile_previewPicture_text">Preview of the profile picture:</string>
+
+    <string name="help_authors">Authors</string>
+    <string name="vaibhav_patel">Vaibhav Patel (190559020)</string>
+    <string name="devarsh_patwa">Devarsh Patwa (190417940)</string>
+    <string name="aryan_amin">Aryan Amin (193265300)</string>
+    <string name="brianna">Brianna Nguyen (180856030)</string>
+    <string name="dhwani">Dhwani Patel (203007310)</string>
+    <string name="activity_version">Version 1.0.0</string>
+    <string name="instructions">Instructions</string>
+    <string name="interface_info">\nWhen a new user opens the app, the landing page will open. The user can click on "Get Started" to go to the login page. If the user does not have an account, they can click on "Sign Up" to create an account. If they have an account already, they can log in with their credentials.\n\n
+        After logging in, the user will be taken to our home page where they can search for postings and if they have any confirmed rides, they will appear below the search section. If the user is a driver looking for passengers, they can search postings as a driver. If the user is a passenger looking for a driver, they can search as a rider. Clicking the search button or clicking on the second item in the menubar will take them to our search page where user will be able to see the postings they have searched. They can click on arrow on the right side of the posting to go into the details of the posting.\n\n
+        The third item on our menu is to create a posting. A user can create a posting as a rider or driver. If the user is posting as a driver, they will have to put in their car information and how many seats are available. If the user is posting as a rider, they won\'t have to put in car information, instead they will be required to put how many seats they need. Creating a posting will result in the database being updated, and the search page will show this new posting.\n\n
+        The fourth item on our menu in our inbox where we can chat with drivers and riders.\n\n
+        The fifth item on our menu is the account page where the user can see their information, view their own listings, and view the help page to read this information. They can also log out using the top right button to log out.\n\n
+</string>
+
+
+</resources>
