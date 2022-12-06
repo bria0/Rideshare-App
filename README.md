@@ -1,4 +1,4 @@
-#rideshare_app (unfinished)
+# rideshare_app (unfinished)
 Rideshare App idea, made to polish skills in Java in Android Studio and UI Design.
 
 ## Why make a rideshare app?
